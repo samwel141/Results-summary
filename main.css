@@ -1,0 +1,375 @@
+@font-face{
+    font-family: "myfont-bold";
+    src: url(./fonts/HankenGrotesk-Bold.ttf);
+   }
+
+   @font-face{
+    font-family: "myfont-extrabold";
+    src: url(./fonts/HankenGrotesk-ExtraBold.ttf);
+   }
+
+   @font-face{
+    font-family: "myfont-medium";
+    src: url(./fonts/HankenGrotesk-Medium.ttf);
+   }
+
+*{
+    margin: 0;
+    padding: 0; 
+}
+body{
+    margin: 0 13rem;
+}
+
+#grad1 {
+    background-image: linear-gradient(to bottom, rgb(3, 11, 78), transparent);
+  }
+ 
+
+.container-main{
+    display: flex;
+    background-color: white;
+    margin: 5px;
+    width: 98%;
+  
+}
+
+.left{
+    background-color: rgb(4, 18, 141, 0.9);
+    min-height: 80vh;
+    flex: 1;
+    width: 40%;
+    color: white;
+    padding: 3rem;
+    border-radius: 2rem;
+    transition: .2s;
+}
+.left:hover{
+    background-color: rgb(4, 18, 141, 0.94);
+}
+.left .head{
+   text-align: center;
+   margin-bottom: 3rem;
+}
+.left .head p{
+    opacity: 0.9;
+    margin-bottom: 3rem;
+    font-family: myfont-medium;
+    font-size: 24px;
+}
+
+
+.left .middle{
+    text-align: center;
+    padding: 2rem;
+    border-radius: 50%;
+    width: 5rem;
+    margin: 1rem auto;
+    margin-bottom: 6rem;
+}
+
+.left .middle h2{
+    margin-bottom: 6px;
+    font-family: myfont-bold;
+    font-size: 38px;
+}
+
+.left .middle p{
+    opacity: 0.5;
+    font-size: 20px;
+}
+
+.left .footer{
+   margin-top: 10rem;
+    
+}
+
+.left .footer h2 {
+    text-align: center;
+    font-family: myfont-medium;
+    font-size: 30px;
+    margin-bottom: 0.9rem;
+   
+}
+
+.left .footer p{
+    text-align: center;
+    margin-bottom: 2rem;
+    font-family: myfont-medium;
+    opacity: 0.9;
+}
+
+
+
+
+
+.right{
+    
+    min-height: 80vh;    
+    flex: 1;
+    width: 70%;
+    padding: 3rem;
+    box-shadow: 10px 10px 10px rgb(77, 5, 5, 0.1);
+    transition: all .3s;
+}
+
+.right:hover {
+    background-color: rgba(230, 214, 170, 0.1);
+    box-shadow: 10px 10px 10px rgb(77, 5, 5, 0.1);
+}
+
+.right h3{
+    margin-bottom: 2rem;
+    font-family: myfont-medium;
+    font-size: 20px;
+}
+
+.right .cards {
+    gap: 3rem;
+    display: grid;
+}
+
+.right .cards .card{
+    display: flex;
+    justify-content: center;
+    padding: 1rem 2rem;
+    border-radius: 1rem;
+}
+
+.right .cards .card span{
+   flex: 0.26;
+}
+
+.right .cards .card h4{
+   flex: 2;
+}
+
+.right .cards .card p{
+      flex: 0.3;
+}
+.right .cards .card p span{
+    opacity: 0.7;
+}
+
+
+/* Styles for each card */
+.right .cards .card1{
+    background-color: rgba(248, 138, 4, 0.09);
+}
+.right .cards .card1:hover{
+    background-color: rgba(248, 138, 4, 0.14);
+}
+.right .cards .card1 h4{
+    color: rgba(255, 94, 0, 0.945);
+}
+
+.right .cards .card2{
+    background-color: rgba(248, 138, 4, 0.04);
+}
+.right .cards .card2:hover{
+    background-color: rgba(248, 138, 4, 0.09);
+}
+.right .cards .card2 h4{
+    color: orange;
+}
+
+.right .cards .card3{
+    background-color: rgb(46, 158, 46, 0.1);
+}
+.right .cards .card3:hover{
+    background-color: rgb(46, 158, 46, 0.15);
+}
+.right .cards .card3 h4{
+    color: green;
+}
+
+.right .cards .card4{
+    background-color: rgb(46, 158, 46, 0.05);
+}
+.right .cards .card4:hover{
+    background-color: rgb(46, 158, 46, 0.1);
+}
+.right .cards .card4 h4{
+    color: rgba(76, 0, 130, 0.952);
+}
+
+
+
+
+button{
+    padding: 1.3rem 3rem;
+    border-radius: 6rem;
+    font-size: 28px;
+    color: white;
+    background-color: rgb(1, 1, 32);
+    transition: all .5s ease;
+    border: 0;
+    cursor: pointer;
+}
+button:hover{
+    background-color: rgb(4, 18, 141, 1);
+    font-size: 29px;
+}
+button:focus-visible{
+    background-color: rgb(4, 18, 141, .9);
+    font-size: 29px;
+}
+
+/* Styles for Responsive design */
+/* ==================For Tablets=========================== */
+@media screen and (max-width:1024px){
+    body{
+        margin: 0 5rem;
+        
+    }
+}
+
+
+/* ==================For Phones=========================== */
+@media screen and (max-width: 600px){
+    body{
+        margin: 0 .01rem;
+        min-height: 100vh;
+        place-items: center;       
+    }
+
+    .container-main{
+        display: grid;
+        background-color: white;
+        width: 99%;
+      
+    }
+
+
+
+
+      .left{
+        width: 90%;
+        min-height: 65vh;
+        padding: 1rem;
+        overflow: hidden;
+        border-radius: 0 0 2rem 2rem;
+    }
+
+    .left .head{
+        text-align: center;
+        margin-bottom: 1rem;
+     }
+     .left .head p{
+         opacity: 0.9;
+         margin-bottom: 1rem;
+         font-family: myfont-medium;
+         font-size: 18px;
+     }
+     
+     
+     .left .middle{
+         text-align: center;
+         padding: 1.6rem;
+         border-radius: 50%;
+         width: 5rem;
+         margin: 2rem auto;
+         margin-bottom: 4rem;
+     }
+     
+     .left .middle h2{
+         margin-bottom: 6px;
+         font-family: myfont-bold;
+         font-size: 36px;
+     }
+     
+     .left .middle p{
+         opacity: 0.5;
+         font-size: 18px;
+     }
+     
+     .left .footer{
+        margin-top: 5rem;
+         
+     }
+     
+     .left .footer h2 {
+         text-align: center;
+         font-family: myfont-medium;
+         font-size: 23px;
+         margin-bottom: 0.9rem;
+        
+     }
+     
+     .left .footer p{
+         text-align: center;
+         margin-bottom: 2rem;
+         font-family: myfont-medium;
+         opacity: 0.9;
+     }
+
+
+
+
+
+
+
+
+     .right{
+        box-shadow: none;
+        width: 90%;
+        place-items: center; 
+        border-radius: 2rem;
+        padding: 1rem;
+        min-height: 70vh;
+    }  
+
+    .right h3{
+        margin-bottom: 2rem;
+        font-family: myfont-medium;
+        font-size: 18px;
+    }
+    
+    .right .cards {
+       display: grid;
+       gap: 2.3rem;
+    }
+    
+    .right .cards .card{
+        display: flex;
+        justify-content: center;
+        padding: .8rem 1.8rem;
+        border-radius: 1rem;
+        width: 85%;
+    }
+    
+    .right .cards .card span{
+       flex: 0.2;
+    }
+    
+    .right .cards .card h4{
+       flex: 1;
+    }
+    
+    .right .cards .card p{
+          flex: 0.3;
+    }
+    .right .cards .card p span{
+        opacity: 0.7;
+    }
+
+    
+    
+    
+    button{
+        padding: .7rem 1.3rem;
+        border-radius: 6rem;
+        font-size: 22px;
+        color: white;
+        background-color: rgb(1, 1, 32);
+        transition: all .5s ease;
+        border: 0;
+        cursor: pointer;
+    }
+
+    button:hover{
+        background-color: rgb(4, 18, 141, 1);
+        font-size: 23px;
+    }
+     
+}
